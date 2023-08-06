@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube name viewer",
+    "version": "1.0",
+    "description": "This extension will show real YouTube names",
+    "action": {
+      "default_title": "YouTube name viewer"
+    },
+    "permissions": [
+      "tabs", "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }]
+}
